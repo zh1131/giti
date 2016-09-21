@@ -1,8 +1,24 @@
-<html>
+<html ng-app = "giti">
 	<head>
 		<title>giti</title>
+		<link href="css/style.css" rel="stylesheet"/>
+		<script src="app/views/menu.js"></script>
+
 	</head>
 	<body>
-		
+		<div ng-controller="searchCtrl">
+			<div id="pix"><img src="img/logo.png" />
+			</div>
+			<input placeholder="search..." ng-model="" ng-change="" class="searchbox"/>
+			<button ng-click="" class="buttonText">
+				Git It
+			</button>
+			<div id="nav-icon1">
+				<span>1</span>
+				<span>2</span>
+				<span>3</span>
+			</div>
+			<hr>
 	</body>
+	<script src="js/bootstrap.js"></script>
 </html>
