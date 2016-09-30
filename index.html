@@ -1,29 +1,23 @@
-<html>
+<html ng-app="giti">
 	<head>
-		<link href="css/dropZone.css" rel="stylesheet" />
+		<script src="app/config.js"></script>
 		<script src="app/dropZone.js"></script>
-		
-		<body>
-			<div>
-				<div >
-					<div id="pix"><img src="img/logo.png" />
-					</div>
-					<input placeholder="search..." class="searchbox"/>
-					<button class="buttonText">
-						Git It
-					</button>
-				</div>
-				<div style="visibility:hidden; opacity:0" id="dropzone">
-					<div id="textnode">
-						Drop Picture Anywhere!
-					</div>
-				</div>
-				<div id=text>
-					Drag Picture anywhere
-				</div>
-				<script src="js/angular.js"></script>
-				<script src="node_modules/jquery/dist/jquery.js"></script>
-		
-		</body>
+		<script src="css/dropZone.css" rel="stylesheet"></script>
+	</head>
+
+	<body >
+		<img src="img/logo.png" />
+		<hr>
+		<div ng-controller="FileUploadCtrl" >
+			Upload your imges :
+			<input id="input"  type="file" ng-modle="upload"  >
+			<button ng-click="saveFiles()">
+			Git IT </button>
+		</div>
+
+		<script src="node_modules/angular/angular.js"></script>
+		<script src="node_modules/jquery/dist/jquery.js"></script>
+
+	</body>
 
 </html>
